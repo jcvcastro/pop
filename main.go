@@ -82,9 +82,9 @@ var rootCmd = &cobra.Command{
 			deliveryMethod = Resend
 		case smtpUsername != "" && smtpPassword != "":
 			deliveryMethod = SMTP
-			if from == "" {
-				from = smtpUsername
-			}
+			// if from == "" {
+			// 	from = smtpUsername
+			// }
 		}
 
 		switch deliveryMethod {
